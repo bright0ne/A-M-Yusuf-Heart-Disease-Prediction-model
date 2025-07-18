@@ -10,7 +10,7 @@
 ## 2. Project Structure
 .
 ├── app.py
-├── model.pkl
+├── heart_model.pkl
 ├── requirements.txt
 ├── templates/
 │   ├── index.html
