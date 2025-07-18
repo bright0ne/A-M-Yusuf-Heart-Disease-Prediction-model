@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Risk Prediction</title>
+</head>
+<body>
+    <h2>Heart Disease Risk Prediction</h2>
+    <form method="POST" action="/predict">
+        <label>Age:</label><input type="number" name="age" step="any"><br><br>
+        <label>Sex (1=Male, 0=Female):</label><input type="number" name="sex"><br><br>
+        <label>Chest Pain Type (0–3):</label><input type="number" name="chest_pain"><br><br>
+        <label>Resting Blood Pressure (mm Hg):</label><input type="number" name="resting_bp"><br><br>
+        <label>Cholesterol (mg/dl):</label><input type="number" name="cholesterol"><br><br>
+        <label>Fasting Blood Sugar >120? (1/0):</label><input type="number" name="fasting_bs"><br><br>
+        <label>Resting ECG Result (0–2):</label><input type="number" name="restecg"><br><br>
+        <label>Max Heart Rate Achieved:</label><input type="number" name="max_hr"><br><br>
+        <label>Exercise-induced Angina (1=yes, 0=no):</label><input type="number" name="exercise_angina"><br><br>
+        <label>ST Depression:</label><input type="number" name="st_depression" step="any"><br><br>
+        <label>Slope of ST Segment (0–2):</label><input type="number" name="st_slope"><br><br>
+        <label>Number of Major Vessels (0–3):</label><input type="number" name="major_vessels"><br><br>
+        <label>Thalassemia (1=normal, 2=fixed, 3=reversible):</label><input type="number" name="thalassemia"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
