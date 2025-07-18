@@ -31,4 +31,4 @@ python app.py
 
 ## 5. Notes
 - Ensure `templates/` folder is in the same directory as `app.py`
-- Model file (`model.pkl`) must match the structure of input from your form
+- Model file (`heart_model.pkl`) must match the structure of input from your form
