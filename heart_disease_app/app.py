@@ -5,7 +5,7 @@ import joblib
 app = Flask(__name__)
 
 # Load your trained model
-model = joblib.load('model.pkl')  # Ensure this matches your actual model file
+model = joblib.load('heart_model.pkl')  # Ensure this matches your actual model file
 
 @app.route('/')
 def home():
